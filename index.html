@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peravalau M.A.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5455c39917.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- ---------about----------- -->
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/2.jpg"></div>
+                
+                <div class="about-col-2">
+                    <p>
+                        I'm Mark Peravalau, math teacher from Belarus. Graduated with a university degree in teaching mathematics & computer science in 2016.  With more than 8+ years of experience I've had the opportunity to teach both for children at school and for adults at university. 
+                    </p>
+                    
+                    <p>
+                        Spent the better part of a work experience working as a teacher from grades 5 to 11. With experience across multiple mediums and with a strong methodological & didactic foundation, I bring a well balanced perspective to my work.
+                    </p>
+                    
+                    <p>
+                        I enjoy a good cup of tea, watching movies & shows. I love spending time with my friends, traveling & photographing places.
+                    </p>
+                    
+                    <p>
+                        I believe in honesty, respect, love & positivity for everything from work to everyday life.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Organization</li>
+                            <li>Teamwork</li>
+                            <li>Communication</li>
+                            <li>Interpersonal skills</li>
+                            <li>Self-evaluation</li>
+                            <li>Critical thinking</li>
+                            <li>Computer skills</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Math Teacher
+                                </span><br>State Educational Institution "Secondary School No. 14 of the city of Novopolotsk"</li>
+                            <li><span>Math Teacher</span><br>State Educational Institution "Butsevichi EPC kindergarten - secondary school"</li>
+                            <li><span>Information Communication Technology Teacher</span><br>Minsk City University of the Third age</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>University of Wroclaw</li>
+                            <li>Belarusian State Pedagogical University Named after Maxim Tank</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------portfolio------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work_1.png">
+                    <div class="layer">
+                        <h3>Math</h3>
+                        <p>Auxiliary material for schoolchildren </p>
+                        <a href="math.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work_2.png">
+                    <div class="layer">
+                        <h3>Computer science</h3>
+                        <p>Auxiliary material for home-based learning </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work_3.png">
+                    <div class="layer">
+                        <h3>Language</h3>
+                        <p>Auxiliary material for third-age university students </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!----------contact------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>milaguchniy@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+375 (29) 717-21-35</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Peravalau/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@alexwen120"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/milaguchniy/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/peravalau/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/background.png" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Peravalau M.A. </p>
+        </div>
+     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link"); 
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab"); 
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz4WkPyGmkoYnawDdTafQ_BRh4EwQzLbec7LPq1W21-pNh0R7AEz3eeB_WzzKEOfqlGfQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
