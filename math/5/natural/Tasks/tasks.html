@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peravalau M.A.</title>
+    <link rel="stylesheet" href="https://peravalau.github.io/website/style.css">
+    <script src="https://kit.fontawesome.com/5455c39917.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://peravalau.github.io/website/images/logo.png" class="logo">
+                <ul>
+                    <li><a href="https://peravalau.github.io/website/index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+   
+    <div id="work">
+        <div class="container">
+            <h1 class="sub-title">Repetition for the 4th grade</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://peravalau.github.io/website/math/images/lesson.png">
+                    <div class="layer">
+                        <h3>Lesson 1</h3>
+                        <a href="https://peravalau.github.io/website/math/5/4/lesson_1/less_1.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://peravalau.github.io/website/math/images/lesson.png">
+                    <div class="layer">
+                        <h3>Lesson 2</h3>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://peravalau.github.io/website/math/images/lesson.png">
+                    <div class="layer">
+                        <h3>Lesson 3</h3>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://peravalau.github.io/website/math/images/lesson.png">
+                    <div class="layer">
+                        <h3>Lesson 4</h3>
+                        <a href="https://peravalau.github.io/website/math/5/4/lesson_1/less_1.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://peravalau.github.io/website/math/images/lesson.png">
+                    <div class="layer">
+                        <h3>Lesson 5</h3>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Peravalau M.A. </p>
+        </div>
+    </div>
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link"); 
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab"); 
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
