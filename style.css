@@ -269,3 +269,9 @@ form .btn2{
     display: block;
 }
 p{padding: 5px;}
+.question {
+      margin-bottom: 10px;
+    }
+.submit-button {
+      margin-top: 10px;
+    }
