@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peravalau M.A.</title>
+    <link rel="stylesheet" href="https://peravalau.github.io/website/style.css">
+    <script src="https://kit.fontawesome.com/5455c39917.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://peravalau.github.io/website/images/logo.png" class="logo">
+                <ul>
+                    <li><a href="https://peravalau.github.io/website/index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+   
+    <div id="work">
+        <div class="container">
+            <h1 class="sub-title">Домашняя работа. Урок 1</h1>
+            <form id="quiz-form">
+                <div class="question">
+                  <label for="question1">Вопрос 1:</label>
+                  <input type="text" id="question1" name="question1" required>
+                </div>
+            
+                <div class="question">
+                  <label for="question2">Вопрос 2:</label>
+                  <input type="text" id="question2" name="question2" required>
+                </div>
+            
+                <div class="question">
+                  <label for="question3">Вопрос 3:</label>
+                  <input type="text" id="question3" name="question3" required>
+                </div>
+            
+                <div class="question">
+                  <label for="question4">Вопрос 4:</label>
+                  <input type="text" id="question4" name="question4" required>
+                </div>
+            
+                <div class="question">
+                  <label for="question5">Вопрос 5:</label>
+                  <input type="text" id="question5" name="question5" required>
+                </div>
+            
+                <button type="submit" class="submit-button">Отправить</button>
+              </form>
+            
+              
+           
+            
+        </div>
+        <div class="copyright">
+            <p>Copyright © Peravalau M.A. </p>
+        </div>
+    </div>
+    
+
+  
+
+<script>
+    document.getElementById('quiz-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Collect user answers
+      const answers = [];
+      for (let i = 1; i <= 5; i++) {
+        const answer = document.getElementById('question' + i).value;
+        answers.push(answer);
+      }
+
+      // Process and display results
+      const correctAnswers = ['ответ1', 'ответ2', 'ответ3', 'ответ4', 'ответ5'];
+      let score = 0;
+      for (let i = 0; i < correctAnswers.length; i++) {
+        if (answers[i].toLowerCase() === correctAnswers[i]) {
+          score++;
+        }
+      }
+
+      const resultMessage = 'Вы набрали ' + score + ' из 5 баллов.';
+      alert(resultMessage);
+    });
+  </script>
+</body>
+</html>
