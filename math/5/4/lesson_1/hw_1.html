@@ -25,23 +25,24 @@
         <div class="container">
             <h1 class="sub-title">Домашняя работа. Урок 1</h1>
             <form id="quiz-form">
+                 <label>1. Решите уравнение.</label>
                 <div class="question">
-                  <label for="question1">Вопрос 1:</label>
+                  <label for="question1">1.а. Решите уравнение. 𝑥 − 2318 = 708 </label>
                   <input type="text" id="question1" name="question1" required>
                 </div>
             
                 <div class="question">
-                  <label for="question2">Вопрос 2:</label>
+                  <label for="question2">1.б. Решите уравнение. 2298 + 𝑥 = 3905 </label>
                   <input type="text" id="question2" name="question2" required>
                 </div>
             
                 <div class="question">
-                  <label for="question3">Вопрос 3:</label>
+                  <label for="question3">1.в. Решите уравнение. 𝑥 : 3 = 7939 </label>
                   <input type="text" id="question3" name="question3" required>
                 </div>
             
                 <div class="question">
-                  <label for="question4">Вопрос 4:</label>
+                  <label for="question4">1.г. Решите уравнение. 4 · 𝑥 = 1236 </label>
                   <input type="text" id="question4" name="question4" required>
                 </div>
             
@@ -77,7 +78,7 @@
       }
 
       // Process and display results
-      const correctAnswers = ['ответ1', 'ответ2', 'ответ3', 'ответ4', 'ответ5'];
+      const correctAnswers = ['3026', '1607', '23817', '309', 'ответ5'];
       let score = 0;
       for (let i = 0; i < correctAnswers.length; i++) {
         if (answers[i].toLowerCase() === correctAnswers[i]) {
