@@ -81,7 +81,7 @@
                 <h3> 3. Решите числовое выражение в порядке арифметических действий. </h3>
                 <div class="question">
                   <label>  </label>  
-                  <label for="question9"> а) 18130 − (6924 : 6 + 1320 * 2) </label>
+                  <label for="question9"> а) 18130 − (6924 : 6 + 1320 · 2) </label>
                   <input type="text" id="question9" name="question9" required>
                 </div>
                 
@@ -101,6 +101,13 @@
                 </div>
                 
                 
+                <h3> 4. Решите геометрическую задачу с рисунком и пояснениями. </h3>
+                <div class="question">
+                  <label>  </label>  
+                  <label for="question13"> Дан квадратный участок земли со стороной 10 метров. Какое наибольшее
+число одинаковых прямоугольников со сторонами, целыми числами, можно отрезать от него. Мера измерения сторон - м. </label>
+                  <input type="text" id="question13" name="question13" required>
+                </div>
                 
                 
                 
@@ -132,7 +139,7 @@
       }
 
       // Process and display results
-      const correctAnswers = ['3026', '1607', '23817', '309', '5','88','6810','200'];
+      const correctAnswers = ['3026', '1607', '23817', '309', '5','88','6810','200','14336','0','147000','200','100'];
       let score = 0;
       for (let i = 0; i < correctAnswers.length; i++) {
         if (answers[i].toLowerCase() === correctAnswers[i]) {
@@ -140,7 +147,7 @@
         }
       }
 
-      const resultMessage = 'Вы набрали ' + score + ' из 5 баллов.';
+      const resultMessage = 'Вы набрали ' + score + ' из 13 баллов.';
       alert(resultMessage);
     });
   </script>
