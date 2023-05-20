@@ -25,30 +25,54 @@
         <div class="container">
             <h1 class="sub-title">Домашняя работа. Урок 1</h1>
             <form id="quiz-form">
-                 <label>1. Решите уравнение.</label>
+            
                 <div class="question">
-                  <label for="question1">1.а. Решите уравнение. 𝑥 − 2318 = 708 </label>
+                  <label> 1. Решите уравнение.</label>
+                  <label for="question1"> a) 𝑥 − 2318 = 708 </label>
                   <input type="text" id="question1" name="question1" required>
                 </div>
             
                 <div class="question">
-                  <label for="question2">1.б. Решите уравнение. 2298 + 𝑥 = 3905 </label>
+                  <label for="question2"> б) 2298 + 𝑥 = 3905 </label>
                   <input type="text" id="question2" name="question2" required>
                 </div>
             
                 <div class="question">
-                  <label for="question3">1.в. Решите уравнение. 𝑥 : 3 = 7939 </label>
+                  <label for="question3"> в) 𝑥 : 3 = 7939 </label>
                   <input type="text" id="question3" name="question3" required>
                 </div>
             
                 <div class="question">
-                  <label for="question4">1.г. Решите уравнение. 4 · 𝑥 = 1236 </label>
+                  <label for="question4"> г) 4 · 𝑥 = 1236 </label>
                   <input type="text" id="question4" name="question4" required>
                 </div>
             
                 <div class="question">
-                  <label for="question5">Вопрос 5:</label>
+                  <label> 2. Решите текстовые задачи с пояснением. </label>  
+                  <label for="question5"> а) В коробке было 60 яблок. Если продать 40, а остальные раздать поровну
+на 4 человека, сколько яблок достанется каждому человеку?</label>
                   <input type="text" id="question5" name="question5" required>
+                </div>
+                
+                <div class="question">
+                  <label for="question6"> б) В кафе заказали 6 бургеров по цене 12 руб за штуку и 4 порции
+картофеля фри по цене 4 руб за порцию. Сколько денег нужно заплатить
+за всё?
+ </label>
+                  <input type="text" id="question6" name="question6" required>
+                </div>
+            
+                <div class="question">
+                  <label for="question7"> в) Цена на бензин повысилась на 2 копейки и составляет 229 копеек за
+литр. Сколько стоило 30 литров бензина до повышения цены? </label>
+                  <input type="text" id="question7" name="question7" required>
+                </div>
+            
+                <div class="question">
+                  <label for="question8"> г)Для строительства стены необходимо 200 кирпичей. Если 40 кирпичей
+биты, а кирпичей треснутых в 2 раза больше чем битых, то сколько
+целых кирпичей понадобится? </label>
+                  <input type="text" id="question8" name="question8" required>
                 </div>
             
                 <button type="submit" class="submit-button">Отправить</button>
@@ -78,7 +102,7 @@
       }
 
       // Process and display results
-      const correctAnswers = ['3026', '1607', '23817', '309', 'ответ5'];
+      const correctAnswers = ['3026', '1607', '23817', '309', '5','88','6810','200'];
       let score = 0;
       for (let i = 0; i < correctAnswers.length; i++) {
         if (answers[i].toLowerCase() === correctAnswers[i]) {
