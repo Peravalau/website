@@ -1,175 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peravalau M.A.</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/5455c39917.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="https://peravalau.github.io/website/images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#portfolio">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <!-- ---------about----------- -->
-    <div id="home">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1"><img src="https://peravalau.github.io/website/images/2.jpg"></div>
-                
-                <div class="about-col-2">
-                    <p>
-                        Я Марк Перевалов, учитель математики. В 2016 году окончил университет по специальности "Преподавание математики и информатики".  Имея более чем 8-летний опыт работы, я  преподавал как для детей в школе, так и для взрослых в университете.
-                    </p>
-                    
-                    <p>
-                        Большую часть своего трудового стажа проработал учителем с 5 по 11 классы. Обладая опытом работы в различных областях и сильной методологической и дидактической базой, я привношу в свою работу хорошо сбалансированный подход.
-                    </p>
-                    
-                    <p>
-                        Я люблю выпить чашечку хорошего чая, посмотреть фильмы и шоу. Я люблю проводить время со своими друзьями, путешествовать и фотографировать места.
-                    </p>
-                    
-                    <p>
-                        Я верю в честность, уважение, любовь и позитив во всем, от работы до повседневной жизни.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>Organization</li>
-                            <li>Teamwork</li>
-                            <li>Communication</li>
-                            <li>Interpersonal skills</li>
-                            <li>Self-evaluation</li>
-                            <li>Critical thinking</li>
-                            <li>Computer skills</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Math Teacher
-                                </span><br>State Educational Institution "Secondary School No. 14 of the city of Novopolotsk"</li>
-                            <li><span>Math Teacher</span><br>State Educational Institution "Butsevichi EPC kindergarten - secondary school"</li>
-                            <li><span>Information Communication Technology Teacher</span><br>Minsk City University of the Third age</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li>University of Wroclaw</li>
-                            <li>Belarusian State Pedagogical University Named after Maxim Tank</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!----------portfolio------------------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="https://peravalau.github.io/website/images/work_1.png">
-                    <div class="layer">
-                        <h3>Math</h3>
-                        <p>Auxiliary material for schoolchildren </p>
-                        <a href="https://peravalau.github.io/website/math/math.html"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://peravalau.github.io/website/images/work_2.png">
-                    <div class="layer">
-                        <h3>Computer science</h3>
-                        <p>Auxiliary material for home-based learning </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://peravalau.github.io/website/images/work_3.png">
-                    <div class="layer">
-                        <h3>Language</h3>
-                        <p>Auxiliary material for third-age university students </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     <!----------contact------------------->
-     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>milaguchniy@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+375 (29) 000-00-00</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/Peravalau/"><i class="fa-brands fa-facebook"></i></a>
 
-                     
-                        <a href="https://www.linkedin.com/in/peravalau/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright © Peravalau M.A. </p>
-        </div>
-     </div>
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link"); 
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab"); 
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz4WkPyGmkoYnawDdTafQ_BRh4EwQzLbec7LPq1W21-pNh0R7AEz3eeB_WzzKEOfqlGfQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-</body>
-</html>
+<!DOCTYPE html> <html> <head> <meta charset="utf-8" /> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--metatextblock--> <title>Николай Сачков</title> <meta name="description" content="Профессиональный ведущий" /> <meta property="og:url" content="https://sachkov.ru" /> <meta property="og:title" content="Николай Сачков" /> <meta property="og:description" content="Профессиональный ведущий" /> <meta property="og:type" content="website" /> <link rel="canonical" href="https://sachkov.ru"> <!--/metatextblock--> <meta name="format-detection" content="telephone=no" /> <meta http-equiv="x-dns-prefetch-control" content="on"> <link rel="dns-prefetch" href="https://ws.tildacdn.com"> <link rel="dns-prefetch" href="https://static.tildacdn.com"> <link rel="shortcut icon" href="https://static.tildacdn.com/tild3336-3961-4466-b762-323331383662/favicon.ico" type="image/x-icon" /> <link rel="apple-touch-icon" href="https://static.tildacdn.com/tild6538-3036-4631-a333-323963666266/sign-of-microphone-i.png"> <link rel="apple-touch-icon" sizes="76x76" href="https://static.tildacdn.com/tild6538-3036-4631-a333-323963666266/sign-of-microphone-i.png"> <link rel="apple-touch-icon" sizes="152x152" href="https://static.tildacdn.com/tild6538-3036-4631-a333-323963666266/sign-of-microphone-i.png"> <link rel="apple-touch-startup-image" href="https://static.tildacdn.com/tild6538-3036-4631-a333-323963666266/sign-of-microphone-i.png"> <meta name="msapplication-TileColor" content="#000000"> <meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild6537-6636-4539-b632-333034666262/sign-of-microphone-i.png"> <!-- Assets --> <script src="https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js" async charset="utf-8"></script> <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';"/> <link rel="stylesheet" href="https://static.tildacdn.com/ws/project1063974/tilda-blocks-page7564509.min.css?t=1735760859" type="text/css" media="all" onerror="this.loaderr='y';" /> <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-cards-1.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" /> <link rel="stylesheet" href="https://static.tildacdn.com/css/fonts-tildasans.css" type="text/css" media="all" onerror="this.loaderr='y';" /> <script nomodule src="https://static.tildacdn.com/js/tilda-polyfill-1.0.min.js" charset="utf-8"></script> <script type="text/javascript">function t_onReady(func) {if(document.readyState!='loading') {func();} else {document.addEventListener('DOMContentLoaded',func);}}
+function t_onFuncLoad(funcName,okFunc,time) {if(typeof window[funcName]==='function') {okFunc();} else {setTimeout(function() {t_onFuncLoad(funcName,okFunc,time);},(time||100));}}</script> <script src="https://static.tildacdn.com/js/tilda-scripts-3.0.min.js" charset="utf-8" defer onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.com/ws/project1063974/tilda-blocks-page7564509.min.js?t=1735760859" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.com/js/tilda-lazyload-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.com/js/tilda-cards-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.com/js/tilda-events-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script type="text/javascript">window.dataLayer=window.dataLayer||[];</script> <script type="text/javascript">(function() {if((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent))===false&&typeof(sessionStorage)!='undefined'&&sessionStorage.getItem('visited')!=='y'&&document.visibilityState){var style=document.createElement('style');style.type='text/css';style.innerHTML='@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';document.getElementsByTagName('head')[0].appendChild(style);function t_setvisRecs(){var alr=document.querySelectorAll('.t-records');Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_animated");});setTimeout(function() {Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_visible");});sessionStorage.setItem("visited","y");},400);}
+document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script></head> <body class="t-body" style="margin:0;"> <!--allrecords--> <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="1063974" data-tilda-page-id="7564509" data-tilda-formskey="5fb5a9c11cf002c12a4cb5d25a923091" data-tilda-lazy="yes" data-tilda-root-zone="com" data-tilda-ts="y"> <div id="rec132332004" class="r t-rec t-rec_pt_135 t-rec_pb_135" style="padding-top:135px;padding-bottom:135px;background-color:#fff7eb; " data-animationappear="off" data-record-type="774" data-bg-color="#fff7eb"> <!-- T774 --> <div class="t774 "> <div class="t-section__container t-container t-container_flex"> <div class="t-col t-col_12 "> <h1
+class="t-section__title t-title t-title_xs t-align_center t-margin_auto"
+field="btitle">
+Николай Сачков
+</h1> <div
+class="t-section__descr t-descr t-descr_xl t-align_center t-margin_auto"
+field="bdescr">
+Профессиональный ведущий
+</div> </div> </div> <style>.t-section__descr {max-width:560px;}#rec132332004 .t-section__title {margin-bottom:40px;}#rec132332004 .t-section__descr {margin-bottom:90px;}@media screen and (max-width:960px) {#rec132332004 .t-section__title {margin-bottom:20px;}#rec132332004 .t-section__descr {margin-bottom:60px;}}</style> <div class="t-card__container t774__container t774__container_mobile-grid" data-blocks-per-row="3"> <div class="t-card__col t774__col t-col t-col_4 t-align_left t-item t774__col_mobile-grid"> <div class="t774__wrapper" style="background-color: #f7ead7;box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);"> <div
+class="t774__imgwrapper"
+style="padding-bottom:83.333333333333%;" itemscope itemtype="http://schema.org/ImageObject"> <meta itemprop="image" content="https://static.tildacdn.com/lib/unsplash/2c4739cb-2750-5b91-b488-0db8c93632ca/photo.jpg"> <div
+class="t774__bgimg t-bgimg" data-original="https://static.tildacdn.com/lib/unsplash/2c4739cb-2750-5b91-b488-0db8c93632ca/photo.jpg"
+style="background-image:url('https://static.tildacdn.com/lib/unsplash/2c4739cb-2750-5b91-b488-0db8c93632ca/-/resizeb/20x/photo.jpg');"
+bgimgfield="li_img__1495010946049"> </div> </div> <div class="t774__content"> <div class="t774__textwrapper t774__paddingbig"> <div class="t-card__title t-name t-name_md" field="li_title__1495010946049"> <a
+href="/events"
+class="t-card__link"
+id="cardtitle1_132332004"
+aria-labelledby="cardtitle1_132332004 cardbtn1_132332004">
+Мероприятия
+</a> </div> <div class="t-card__descr t-descr t-descr_xxs" field="li_descr__1495010946049">
+Юбилей<br />Корпоратив<br />Банкет
+</div> </div> <div class="t-card__btntext-wrapper t774__paddingbig"> <div
+class="t-card__btn-text t-btntext "
+id="cardbtn1_132332004" data-field="li_buttontitle__1495010946049"
+style="color:#2e2e2e;font-family:CirceRounded;font-weight:100;"
+aria-hidden="true" data-buttonfieldset="li_button" data-lid="1495010946049">
+Подробнее
+</div> </div> </div> </div> </div> <div class="t-card__col t774__col t-col t-col_4 t-align_left t-item t774__col_mobile-grid"> <div class="t774__wrapper" style="background-color: #f7ead7;box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);"> <div
+class="t774__imgwrapper"
+style="padding-bottom:83.333333333333%;" itemscope itemtype="http://schema.org/ImageObject"> <meta itemprop="image" content="https://static.tildacdn.com/lib/unsplash/73841390-9431-b9be-75a0-7c3e6f05c02c/photo.jpg"> <div
+class="t774__bgimg t-bgimg" data-original="https://static.tildacdn.com/lib/unsplash/73841390-9431-b9be-75a0-7c3e6f05c02c/photo.jpg"
+style="background-image:url('https://static.tildacdn.com/lib/unsplash/73841390-9431-b9be-75a0-7c3e6f05c02c/-/resizeb/20x/photo.jpg');"
+bgimgfield="li_img__1499960678558"> </div> </div> <div class="t774__content"> <div class="t774__textwrapper t774__paddingbig"> <div class="t-card__title t-name t-name_md" field="li_title__1499960678558"> <a
+href="/podcast"
+class="t-card__link"
+id="cardtitle2_132332004"
+aria-labelledby="cardtitle2_132332004 cardbtn2_132332004">
+Подкаст<br /> </a> </div> <div class="t-card__descr t-descr t-descr_xxs" field="li_descr__1499960678558">
+Осознанность<br />Эффективность<br />Самореализация
+</div> </div> <div class="t-card__btntext-wrapper t774__paddingbig"> <div
+class="t-card__btn-text t-btntext "
+id="cardbtn2_132332004" data-field="li_buttontitle__1499960678558"
+style="color:#2e2e2e;font-family:CirceRounded;font-weight:100;"
+aria-hidden="true" data-buttonfieldset="li_button" data-lid="1499960678558">
+Подробнее
+</div> </div> </div> </div> </div> <div class="t-card__col t774__col t-col t-col_4 t-align_left t-item t774__col_mobile-grid"> <div class="t774__wrapper" style="background-color: #f7ead7;box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);"> <div
+class="t774__imgwrapper"
+style="padding-bottom:83.333333333333%;" itemscope itemtype="http://schema.org/ImageObject"> <meta itemprop="image" content="https://static.tildacdn.com/lib/unsplash/2dabc118-0936-9949-c91a-9d2c8b1b7904/photo.jpg"> <div
+class="t774__bgimg t-bgimg" data-original="https://static.tildacdn.com/lib/unsplash/2dabc118-0936-9949-c91a-9d2c8b1b7904/photo.jpg"
+style="background-image:url('https://static.tildacdn.com/lib/unsplash/2dabc118-0936-9949-c91a-9d2c8b1b7904/-/resizeb/20x/photo.jpg');"
+bgimgfield="li_img__1495010928665"> </div> </div> <div class="t774__content"> <div class="t774__textwrapper t774__paddingbig"> <div class="t-card__title t-name t-name_md" field="li_title__1495010928665"> <a
+href="/workshop"
+class="t-card__link"
+id="cardtitle3_132332004"
+aria-labelledby="cardtitle3_132332004 cardbtn3_132332004">
+Мастерская
+</a> </div> <div class="t-card__descr t-descr t-descr_xxs" field="li_descr__1495010928665">
+Самостоятельность<br />Сотрудничество<br />Свобода
+</div> </div> <div class="t-card__btntext-wrapper t774__paddingbig"> <div
+class="t-card__btn-text t-btntext "
+id="cardbtn3_132332004" data-field="li_buttontitle__1495010928665"
+style="color:#2e2e2e;font-family:CirceRounded;font-weight:100;"
+aria-hidden="true" data-buttonfieldset="li_button" data-lid="1495010928665">
+Подробнее
+</div> </div> </div> </div> </div> </div> </div> <style>#rec132332004 .t774__wrapper:hover,#rec132332004 .t774__col.t-focusable .t774__wrapper,#rec132332004 .t774__col.t-card__col_btnfocusable .t774__wrapper {box-shadow:0px 10px 35px 0px rgba(0,0,0,0.3) !important;}</style> <script>t_onReady(function() {t_onFuncLoad('t774_init',function() {t774_init('132332004');});});</script> <style> #rec132332004 .t774__wrapper{border-radius:15px;}</style> </div> <div id="rec285931660" class="r t-rec t-rec_pt_15 t-rec_pb_60" style="padding-top:15px;padding-bottom:60px;background-color:#f7ead7; " data-record-type="463" data-bg-color="#f7ead7"> <!-- T463 --> <div class="t463" id="t-footer_285931660"> <div class="t463__maincontainer "> <div class="t463__content" style=""> <div class="t463__colwrapper"> <div class="t463__col"> </div> <div class="t463__col t463__col_center t-align_center"> <div class="t463__typo t463__copyright t-name t-name_xs" field="text">© sachkov.ru 2004 – 2025</div> </div> <div class="t463__col t-align_right"> </div> </div> </div> </div> </div> <style>#rec285931660 .t463__copyright{color:#000000;}</style> <style> #rec285931660 .t463__link{font-size:20px;color:#000000;font-weight:300;}#rec285931660 .t463__logo{font-size:20px;color:#000000;font-weight:300;}</style> </div> </div> <!--/allrecords--> <!-- Stat --> <!-- Yandex.Metrika counter 50858999 --> <script type="text/javascript" data-tilda-cookie-type="analytics">setTimeout(function(){(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");window.mainMetrikaId='50858999';ym(window.mainMetrikaId,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true,ecommerce:"dataLayer"});},2000);</script> <noscript><div><img src="https://mc.yandex.ru/watch/50858999" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --> <script type="text/javascript" data-tilda-cookie-type="analytics">setTimeout(function(){(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-128068540-1','auto');ga('send','pageview');},2000);window.mainTracker='user';</script> <script type="text/javascript">if(!window.mainTracker) {window.mainTracker='tilda';}
+window.tildastatscroll='yes';setTimeout(function(){(function(d,w,k,o,g) {var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.key=k;s.id="tildastatscript";s.src=g;if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,'29927753d716b54eef4f625b7d055bac','script','https://static.tildacdn.com/js/tilda-stat-1.0.min.js');},2000);</script> </body> </html>
